@@ -75,30 +75,19 @@ export default function TeamsPage() {
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
         {team.map((member, idx) => (
           <div key={idx} className="border rounded-lg shadow p-4 text-center">
-            {/* Render Image hanya jika photo ada */}
-            {member.photo ? (
-              <Image
-                src={member.photo}
-                alt={member.name}
-                width={96}
-                height={96}
-                className="rounded-full mx-auto mb-4 object-cover"
-              />
-            ) : (
-              <div className="w-24 h-24 rounded-full mx-auto mb-4 bg-gray-200" />
-            )}
-
-            {/* Render nama hanya jika ada */}
-            <h2 className="font-montserrat font-bold text-xl text-black">
-              {member.name || "Loading..."}
+            <Image
+              src={member.photo}
+              alt={member.name}
+              width={96}
+              height={96}
+              className="rounded-full mx-auto mb-4 object-cover"
+            />
+            <h2 className="font-montserrat font-bold text-xl  text-black">
+              {member.name}
             </h2>
-
-            <p className="font-montserrat text-sm text-black">
-              {member.role || ""}
-            </p>
-
+            <p className="font-montserrat text-sm text-black">{member.role}</p>
             <p className="font-montserrat mt-2 text-sm text-deep-grey">
-              {member.bio || ""}
+              {member.bio}
             </p>
           </div>
         ))}
