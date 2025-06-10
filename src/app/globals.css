@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme inline {
+  --color-brown: #ccb183;
+  --color-deep-brown: #a66900;
+  --color-deep-white: #f3eee4;
+  --color-orange: #db951b;
+  --color-grey: #d7d7d7;
+  --color-deep-grey: #757575;
+  --color-black: #262626;
+  --font-montserrat: "Montserrat", sans-serif;
+  --font-DM-Serif: "DM Serif Display", serif;
+}
